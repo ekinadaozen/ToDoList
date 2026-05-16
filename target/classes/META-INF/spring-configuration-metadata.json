@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "application.security.jwt",
+      "type": "com.smarttask.security.JwtProperties",
+      "sourceType": "com.smarttask.security.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.security.jwt.expiration",
+      "type": "java.lang.Long",
+      "sourceType": "com.smarttask.security.JwtProperties"
+    },
+    {
+      "name": "application.security.jwt.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.smarttask.security.JwtProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

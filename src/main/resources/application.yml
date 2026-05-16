@@ -4,7 +4,7 @@ spring:
 
   # ── Active Profile ──────────────────────────────────────────────────
   profiles:
-    active: h2   # Switch to 'postgres' for PostgreSQL
+    active: postgres   # Switch to 'h2' for In-Memory Database
 
   # ── JPA / Hibernate ────────────────────────────────────────────────
   jpa:
@@ -13,7 +13,7 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        format_sql: true
+        "[format_sql]": true
     show-sql: false
 
 # ── H2 Profile ─────────────────────────────────────────────────────
@@ -58,4 +58,4 @@ application:
   security:
     jwt:
       secret-key: ${JWT_SECRET_KEY:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
-      expiration: ${JWT_EXPIRATION_MS:86400000}   # 24 hours in milliseconds
+      expiration: ${JWT_EXPIRATION_MS:2400000}   

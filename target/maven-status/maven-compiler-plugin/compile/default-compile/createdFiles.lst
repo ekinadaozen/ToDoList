@@ -1,8 +1,10 @@
+com\smarttask\security\JwtProperties.class
 com\smarttask\service\TaskService.class
 com\smarttask\controller\AuthController.class
 com\smarttask\repository\UserRepository.class
 com\smarttask\controller\TaskController.class
 com\smarttask\dto\response\ApiErrorResponse$ApiErrorResponseBuilder.class
+META-INF\spring-configuration-metadata.json
 com\smarttask\dto\response\AuthResponse$AuthResponseBuilder.class
 com\smarttask\dto\response\TaskResponse.class
 com\smarttask\entity\User$UserBuilder.class

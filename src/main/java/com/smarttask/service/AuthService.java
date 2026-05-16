@@ -31,6 +31,7 @@ public class AuthService {
     }
 
     @Transactional
+    @SuppressWarnings("null")
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.existsByEmail(request.getEmail())) {
             throw new DuplicateResourceException("An account with this email already exists");

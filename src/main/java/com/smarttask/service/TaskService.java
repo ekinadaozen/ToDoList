@@ -42,6 +42,7 @@ public class TaskService {
     // ── Command ─────────────────────────────────────────────────────
 
     @Transactional
+    @SuppressWarnings("null")
     public TaskResponse createTask(CreateTaskRequest request) {
         User user = getCurrentUser();
 
@@ -58,6 +59,7 @@ public class TaskService {
     }
 
     @Transactional
+    @SuppressWarnings("null")
     public TaskResponse updateTask(Long id, UpdateTaskRequest request) {
         Task task = findTaskForCurrentUser(id);
 
@@ -79,6 +81,7 @@ public class TaskService {
     }
 
     @Transactional
+    @SuppressWarnings("null")
     public void deleteTask(Long id) {
         Task task = findTaskForCurrentUser(id);
         taskRepository.delete(task);
